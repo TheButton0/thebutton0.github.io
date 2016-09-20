@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: #FFEB3B;
+}
+
+button {
+    background-color: #FFEB3B;
+    color: #212121;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #212121;
+    border-radius: 5px;
+    font-family: Sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    height: 45px;
+    width: 100px;
+    text-align: center;
+    transition: all 0.5s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50px;
+    margin-bottom: -22.5px;
+}
+
+button.red {
+    background-color: #F44336;
+    color: #212121;
+}
+button.blue {
+	background-color: #2196F3;
+	color: #212121;
+}
+button.green {
+	background-color: #00E676;
+	color: #212121;
+}
+button.orange {
+	background-color: #FF9800;
+	color: #212121;
+}
+button.purple {
+	background-color: #9C27B0;
+	color: #212121;
+}
+button.yellow {
+	background-color: #FFEB3B;
+	color: #212121;
+}
+
+button:hover {
+    background: #212121;
+    color: #FFEB3B;
+    cursor: pointer;
+}
+
+button:active {
+    background: #424242;
+    color: #FFEB3B;
+    border: #424242;
+    height: 40px;
+    width: 90px;
+    margin-left: 5px;
+    margin-top: 2.5px;
+}
+
+button:focus {
+    outline: 0;
+}

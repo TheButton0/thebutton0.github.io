@@ -1,1 +1,29 @@
-Hello World
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fading Floating Button</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script type="text/javascript">
+			var colors = ['#F44336', '#00E676', '#2196F3', '#FF9800', '#9C27B0', '#FFEB3B'];
+			var classes = ['red', 'green', 'blue', 'orange', 'purple', 'yellow'];
+			var rotation = 0;
+
+			function changeColor(){
+				console.log("running");
+				document.body.style.backgroundColor = colors[rotation];
+				document.getElementById("button").style.color = colors[rotation];
+				document.getElementById("button").className = classes[rotation];
+				//document.getElementsByClassName(colors[rotation])[0].style.color = "#212121";
+				if(rotation == 5){
+					rotation = 0;
+				} else {
+					rotation++;
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<button id="button" onmousedown="inter=setInterval(changeColor, 100);" onmouseup="clearInterval(inter)">CLICK</button>
+	</body>
+</html>
